@@ -1,0 +1,27 @@
+import java.util.*;
+import java.io.*;
+
+class Solution{
+    public static void main(String []argh) {
+        int sinir, toplam = 0,sayac=0;
+        double ort;
+
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("sınır olan sayıyı giriniz");
+        sinir=input.nextInt();
+        for(int i=0; i<=sinir; i++)
+        {
+            if(i%3==0 && i%4==0)
+            {
+                sayac++;
+                toplam+=i;
+            }
+        }
+        ort=toplam/sayac;
+        System.out.print("Ortalama: "+ort);
+
+    }
+
+}
+
