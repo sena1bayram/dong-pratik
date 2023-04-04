@@ -1,0 +1,27 @@
+import java.util.*;
+import java.io.*;
+
+class Solution{
+    public static void main(String []argh) {
+        int sayi,toplam=0;
+
+        Scanner input = new Scanner(System.in);
+        while (true) {
+            System.out.print(" sayı giriniz");
+            sayi = input.nextInt();
+            if (sayi % 2 == 0)
+            {
+                if (sayi % 4 == 0|| sayi % 2 == 0)
+                {
+                    toplam += sayi;
+
+                }
+
+            }
+            else break;
+        }
+        System.out.print(" sayilar toplamı " + toplam);
+
+    }
+
+}
